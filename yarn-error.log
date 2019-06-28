@@ -1,0 +1,104 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add gulp-scss-starter
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\AppData\Roaming\npm;C:\Users\USER\AppData\Local\GitHubDesktop\bin;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  8.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/gulp-scss-starter: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65200:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:129590:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130562:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130484:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+      "name": "gulp-scss-starter",
+      "description": "Frontend development with pleasure",
+      "author": "Andrey Gorokhov",
+      "repository": {
+          "type": "git",
+          "url": "https://github.com/andreyalexeich/gulp-scss-starter.git"
+      },
+      "license": "MIT",
+      "scripts": {
+          "dev": "gulp",
+          "build": "gulp prod --production",
+          "build views": "gulp views",
+          "build styles": "gulp styles",
+          "build scripts": "gulp scripts",
+          "build images": "gulp images",
+          "build webp": "gulp webp",
+          "build sprites": "gulp sprites",
+          "build fonts": "gulp fonts",
+          "build favicons": "gulp favicons",
+          "build gzip": "gulp gzip",
+          "lint:style": "stylelint \"src/**/*.scss\" --syntax=scss",
+          "lint:style --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix"
+      },
+      "devDependencies": {
+          "@babel/core": "^7.4.3",
+          "@babel/preset-env": "^7.4.3",
+          "@babel/register": "^7.4.0",
+          "babel-eslint": "^10.0.1",
+          "babel-loader": "^8.0.5",
+          "bem-tools-core": "bem-tools/bem-tools-core",
+          "bem-tools-create": "bem-tools/bem-tools-create",
+          "browser-sync": "^2.23.6",
+          "del": "^4.1.1",
+          "gulp": "^4.0.0",
+          "gulp-autoprefixer": "^5.0.0",
+          "gulp-clean-css": "^3.9.2",
+          "gulp-debug": "^3.2.0",
+          "gulp-favicons": "^2.3.1",
+          "gulp-file-include": "^2.0.1",
+          "gulp-group-css-media-queries": "^1.2.2",
+          "gulp-if": "^2.0.2",
+          "gulp-imagemin": "^5.0.3",
+          "gulp-plumber": "^1.2.0",
+          "gulp-rename": "^1.2.2",
+          "gulp-replace": "^0.6.1",
+          "gulp-sass": "^3.1.0",
+          "gulp-sourcemaps": "^2.6.4",
+          "gulp-svg-sprite": "^1.5.0",
+          "gulp-watch": "^5.0.0",
+          "gulp-webp": "^4.0.1",
+          "imagemin-giflossy": "^5.1.10",
+          "imagemin-jpeg-recompress": "^5.1.0",
+          "imagemin-mozjpeg": "^8.0.0",
+          "imagemin-pngquant": "^7.0.0",
+          "imagemin-webp": "^5.0.0",
+          "imagemin-zopfli": "^6.0.0",
+          "require-dir": "^1.2.0",
+          "stylelint": "^10.0.1",
+          "stylelint-order": "^3.0.0",
+          "stylelint-selector-bem-pattern": "^2.1.0",
+          "webpack": "^4.30.0",
+          "webpack-stream": "^5.2.1",
+          "yargs": "^12.0.5"
+      },
+      "dependencies": {
+          "smart-grid": "^2.1.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

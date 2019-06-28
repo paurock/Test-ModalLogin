@@ -3,6 +3,20 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
 }
 
+body {  
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url(../img/background-image-sunset.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+ 
+input { 
+    outline:none;
+}
+
+
 .container {
     @include container();
     @include sm(max-width, 510px);
