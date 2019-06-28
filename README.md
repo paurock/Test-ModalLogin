@@ -1,1 +1,1 @@
-# Test Modal Window exmple
+# Test Modal Window example
