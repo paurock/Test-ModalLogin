@@ -7,7 +7,7 @@
         <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="./styles/main.min.css">
+        <link rel="stylesheet" href="../styles/main.min.css">
     </head>
     <body>
            
@@ -21,7 +21,7 @@
              <!--End Back button-->
             <!--Start Logo button--> 
             <div class="modal-login-wrapbox__logo">
-                <img src="./img/logo.svg" />
+                <img src="../img/logo.svg" />
             </div>
             <!--End Logo button--> 
             <!--Start Phone/Password fields--> 
@@ -53,37 +53,8 @@
     <!--End Form-container block--> 
 </div>
  
-<script type="text/javascript">
-const checkForm = () => {     
-    
-    const form = document.querySelector(".modal-login-wrapbox__content")
-
-    const myRegExpPhone = form.phone.pattern
-    const mobile = form.phone.value
-    const password = form.password.value
-    const submitButton = form.submitButton
-
-    const isValidatedPhone = mobile.match(myRegExpPhone) ? true : false
-    const isValidatedPassword = password.length>=4 ? true : false
-    const isValidatePhoneAndPassword = () => isValidatedPhone && isValidatedPassword ? true : false
-     
-   if (isValidatePhoneAndPassword()) {
-    submitButton.style = 'background-color:none; color:white; border:1px solid white; opacity:0.9;'
-    submitButton.disabled=false
-
-   } else {
-       submitButton.style = 'background-color:none; color:gray; border:1px solid gray; opacity:0.2;'       
-       submitButton.disabled=true
-   }
-   
-} 
-    
-document.querySelector('.modal-login-wrapbox__inputs-phone').addEventListener('keydown', () =>checkForm()) 
-document.querySelector('.modal-login-wrapbox__inputs-password').addEventListener('keydown', () =>checkForm()) 
-
-</script>
         
         
-        <script src="./js/main.min.js"></script>
+        <script src="../js/main.min.js"></script>
     </body>
 </html>
