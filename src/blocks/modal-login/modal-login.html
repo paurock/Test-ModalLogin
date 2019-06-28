@@ -51,7 +51,7 @@ const checkForm = () => {
     const submitButton = form.submitButton
 
     const isValidatedPhone = mobile.match(myRegExpPhone) ? true : false
-    const isValidatedPassword = password.length>=5 ? true : false
+    const isValidatedPassword = password.length>=4 ? true : false
     const isValidatePhoneAndPassword = () => isValidatedPhone && isValidatedPassword ? true : false
      
    if (isValidatePhoneAndPassword()) {
