@@ -173,11 +173,14 @@
 	 
 
 	/*Switcher fields*/
+	
 	.modal-login-wrapbox__options-forgotpsw {
 		font-size:16px;
 		color:rgba(255,255,255, 0.7);
-		line-height: 22px;
-		cursor:pointer;
+		line-height: 22px;		 
+		& a { 
+			color:rgba(255,255,255, 0.7);
+		}
 	}
  .switcher {
 	 border-radius: 10px;	
@@ -256,6 +259,9 @@
  .switcher__text {
 	 line-height: 22px;
 	 cursor:pointer;
+	 & a {
+		color:rgba(255,255,255, 0.7);
+	 }
  }
 /*End Switcher*/
 	&__options {
