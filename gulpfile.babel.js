@@ -9,7 +9,7 @@ const requireDir = require("require-dir"),
                 "./src/views/index.html",
                 "./src/views/pages/*.html"
             ],
-            dist: "./dist/",
+            docs: "./docs/",
             watch: [
                 "./src/blocks/**/*.html",
                 "./src/views/**/*.html"
@@ -17,7 +17,7 @@ const requireDir = require("require-dir"),
         },
         styles: {
             src: "./src/styles/main.scss",
-            dist: "./dist/styles/",
+            docs: "./docs/styles/",
             watch: [
                 "./src/blocks/**/*.scss",
                 "./src/styles/**/*.scss"
@@ -25,7 +25,7 @@ const requireDir = require("require-dir"),
         },
         scripts: {
             src: "./src/js/index.js",
-            dist: "./dist/js/",
+            docs: "./docs/js/",
             watch: [
                 "./src/blocks/**/*.js",
                 "./src/js/**/*.js"
@@ -37,7 +37,7 @@ const requireDir = require("require-dir"),
                 "!./src/img/svg/*.svg",
                 "!./src/img/favicon.{jpg,jpeg,png,gif}"
             ],
-            dist: "./dist/img/",
+            docs: "./docs/img/",
             watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
         },
         webp: {
@@ -45,7 +45,7 @@ const requireDir = require("require-dir"),
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
                 "!./src/img/favicon.{jpg,jpeg,png,gif}"
             ],
-            dist: "./dist/img/",
+            docs: "./docs/img/",
             watch: [
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
                 "!./src/img/favicon.{jpg,jpeg,png,gif}"
@@ -53,21 +53,21 @@ const requireDir = require("require-dir"),
         },
         sprites: {
             src: "./src/img/svg/*.svg",
-            dist: "./dist/img/sprites/",
+            docs: "./docs/img/sprites/",
             watch: "./src/img/svg/*.svg"
         },
         fonts: {
             src: "./src/fonts/**/*.{woff,woff2}",
-            dist: "./dist/fonts/",
+            docs: "./docs/fonts/",
             watch: "./src/fonts/**/*.{woff,woff2}"
         },
         favicons: {
             src: "./src/img/favicon.{jpg,jpeg,png,gif}",
-            dist: "./dist/img/favicons/",
+            docs: "./docs/img/favicons/",
         },
         gzip: {
             src: "./src/.htaccess",
-            dist: "./dist/"
+            docs: "./docs/"
         }
     };
 
