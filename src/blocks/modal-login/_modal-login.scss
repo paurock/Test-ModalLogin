@@ -25,7 +25,7 @@
 		display:flex;
 		@include size-xs(12);
 		@include size-md(10);	
-		@include md(max-width, 626px) 	
+		@include md(max-width, 626px);	
 		content:"";			 
 		filter:blur(5px);		 
 		position: absolute;	
@@ -43,7 +43,7 @@
 		@include col();
 		@include size-xs(12);
 		@include size-md(10);
-		@include md(max-width, 626px)
+		@include md(max-width, 626px);
 		justify-content: center;
 		flex-direction: column;
 		height: 434px;		 
@@ -169,10 +169,50 @@
 	&__inputs-password:invalid:not(:placeholder-shown) {
 			color: black;	
 			background: white;				
-	}	 
-	 
+	}		
+	&__options {
+		@include row-flex();
+		@include col();		
+		@include size-xs(12);
+		@include md(max-width, 450px);
+		@include md(margin, auto);
 
-	/*Switcher fields*/
+		justify-content: space-around;
+		align-items: flex-start;
+		height: 10%;
+		color:rgba(255,255,255, 0.7);
+		text-decoration: underline;		
+	}
+
+	&__entrance {
+		@include row-flex();
+		@include col();		
+		@include size-xs(12);
+		@include xs(align-items, center);
+		@include md(align-items, flex-start);
+		justify-content: space-around;		 
+		height: 20%;			 
+	}
+
+	&__entrance-button {
+		font-size: 12px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		height: 48px;
+		width:151px;
+		border-radius: 50px;
+		background: none;
+		border:1px solid rgba(255,255,255, 0.5); ; 
+		color:rgba(255,255,255, 0.5); 
+		cursor: pointer;		 
+	}
+	&__entrance-button:focus {		 
+		background: white; 
+		color:black;
+	}
+}
+/*Switcher fields*/
 	
 	.modal-login-wrapbox__options-forgotpsw {
 		font-size:16px;
@@ -264,48 +304,3 @@
 	 }
  }
 /*End Switcher*/
-	&__options {
-		@include row-flex();
-		@include col();		
-		@include size-xs(12);
-		@include md(max-width, 450px);
-		@include md(margin, auto);
-
-		justify-content: space-around;
-		align-items: flex-start;
-		height: 10%;
-		color:rgba(255,255,255, 0.7);
-		text-decoration: underline;		
-	}
-
-	&__entrance {
-		@include row-flex();
-		@include col();		
-		@include size-xs(12);
-		@include xs(align-items, center);
-		@include md(align-items, flex-start);
-		justify-content: space-around;		 
-		height: 20%;			 
-	}
-
-	&__entrance-button {
-		font-size: 12px;
-		display: flex;
-		justify-content: center;
-		align-items:center;
-		height: 48px;
-		width:151px;
-		border-radius: 50px;
-		background: none;
-		border:1px solid rgba(255,255,255, 0.5); ; 
-		color:rgba(255,255,255, 0.5); 
-		cursor: pointer;		 
-	}
-	&__entrance-button:focus {		 
-		background: white; 
-		color:black;
-	}
- 
-   	
-
-}

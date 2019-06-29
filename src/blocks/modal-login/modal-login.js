@@ -1,14 +1,13 @@
-const checkForm = () => {     
-    
-    const form = document.querySelector(".modal-login-wrapbox__content")
+const form = document.querySelector(".modal-login-wrapbox__content")
 
-    const myRegExpPhone = form.phone.pattern
-    const mobile = form.phone.value
-    const password = form.password.value
-    const submitButton = form.submitButton
+const myRegExpPhone = form.phone.pattern
+const mobile = form.phone 
+const password = form.password 
+const submitButton = form.submitButton
 
-    const isValidatedPhone = mobile.match(myRegExpPhone) ? true : false
-    const isValidatedPassword = password.length>=4 ? true : false
+const checkForm = () => {
+    const isValidatedPhone = mobile.value.match(myRegExpPhone) ? true : false
+    const isValidatedPassword = password.value.length>=5 ? true : false
     const isValidatePhoneAndPassword = () => isValidatedPhone && isValidatedPassword ? true : false
      
    if (isValidatePhoneAndPassword()) {
@@ -22,5 +21,6 @@ const checkForm = () => {
    
 } 
     
-document.querySelector('.modal-login-wrapbox__inputs-phone').addEventListener('keydown', () =>checkForm()) 
-document.querySelector('.modal-login-wrapbox__inputs-password').addEventListener('keydown', () =>checkForm()) 
+mobile.addEventListener('input', () =>checkForm()) 
+ password.addEventListener('input', () =>checkForm()) 
+ 
