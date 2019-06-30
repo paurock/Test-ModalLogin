@@ -322,4 +322,7 @@
 	.modal-login-wrapbox__back::before { 
 	padding-left:20px!important;	
 	}
+	.modal-login-wrapbox__back a { 
+		padding-top:0 !important;
+	}
 }
