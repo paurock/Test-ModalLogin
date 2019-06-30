@@ -23,7 +23,7 @@ const checkForm = () => {
     submitButton.style.border = "1px solid white"     
     submitButton.disabled=false     
    } else {       
-    submitButton.style.border = "0" 
+    submitButton.style.border = "0"  
     submitButton.style.border = "1px solid gray"
     submitButton.style.color = "gray"       
     submitButton.disabled=true        
