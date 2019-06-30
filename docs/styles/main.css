@@ -531,7 +531,6 @@ input {
   margin-bottom: -25px !important;
   overflow: hidden;
   font-size: 18px;
-  line-height: 35px;
 }
 
 .modal-login-wrapbox__inputs-phone {
@@ -555,8 +554,8 @@ input {
   text-overflow: clip;
   padding-right: 40px;
   padding-left: 40px;
-  line-height: 35px;
-  height: 35px;
+  line-height: 39px;
+  height: 39px;
   outline: none;
 }
 
@@ -830,6 +829,13 @@ input {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .modal-login-wrapbox__content::before {
     margin-top: -12px;
+  }
+
+  .modal-login-wrapbox__inputs-phone.ie {
+    background-image: url(../img/input-check-icons.svg) !important;
+    background: white;
+    background-repeat: no-repeat !important;
+    background-position: 98% 35px !important;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

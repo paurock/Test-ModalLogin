@@ -129,11 +129,22 @@ var checkForm = function checkForm() {
     return isValidatedPhone && isValidatedPassword ? true : false;
   };
 
+  if (isValidatedPhone) {
+    mobile.style.backgroundPosition = "98% -35px !important";
+    mobile.style.background = "none";
+  } else {
+    mobile.style.backgroundPosition = "98% 0px !important";
+    mobile.style.background = "white";
+  }
+
   if (isValidatePhoneAndPassword()) {
-    submitButton.style = 'background-color:none; color:white; border:1px solid white; opacity:0.9;';
+    submitButton.style.color = "white";
+    submitButton.style.border = "1px solid white";
     submitButton.disabled = false;
   } else {
-    submitButton.style = 'background-color:none; color:gray; border:1px solid gray; opacity:0.2;';
+    submitButton.style.border = "0";
+    submitButton.style.border = "1px solid gray";
+    submitButton.style.color = "gray";
     submitButton.disabled = true;
   }
 };

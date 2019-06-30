@@ -40,7 +40,7 @@
 		border-radius: 5px;		 
 	}
 
-	ie&__content {		 
+		&__content {		 
 		@include row-flex();
 		@include col();
 		@include size-xs(12);
@@ -68,7 +68,7 @@
 	&__back a {
 		color: rgba(255,255,255, 0.5); 
 		text-decoration:none;
-		padding:5px 0 0 5px;
+		padding: 5px 0 0 5px;
 		font-size:10px;
 	}
 	 
@@ -112,8 +112,7 @@
 		flex-wrap: nowrap;		
 		margin-bottom: -25px!important;
 		overflow:hidden;	
-		font-size:18px; 
-		line-height: 35px;
+		font-size:18px;  
 
 		&-phone  {			
 			background-repeat: no-repeat !important;
@@ -138,8 +137,8 @@
 		text-overflow:clip;		
 		padding-right: 40px; 
 		padding-left:40px;	
-		line-height: 35px;
-		height:35px;
+		line-height: 39px;
+		height:39px;
 		outline: none;		
 	}	
 	
@@ -313,4 +312,14 @@
 	.modal-login-wrapbox__content::before {
 		margin-top:-12px;		 
 	} 
+	 	
+	 .modal-login-wrapbox__inputs-phone.ie  {
+		background-image: url(../img/input-check-icons.svg)!important;	
+		background:white;
+		background-repeat: no-repeat !important;
+		background-position: 98% 35px !important;
+	}		
+		 
+ 
+
 }
