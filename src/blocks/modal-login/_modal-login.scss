@@ -8,9 +8,11 @@
 	height: 100vh;
 	width:100vw;
 	margin: 0 !important;
+	top:0;
+	left:0;
 }
 
-.modal-login-wrapbox { 
+.modal-login-wrapbox {	 
 	display: flex;
 	align-items:center;
 	width:100vw;
@@ -20,14 +22,13 @@
 	justify-content: center;
 	z-index: 10;	 
 	
-
-	&__content::before {
+	&__content::before {	 
 		display:flex;
 		@include size-xs(12);
 		@include size-md(10);	
 		@include md(max-width, 626px);	
 		content:"";			 
-		filter:blur(5px);		 
+		filter:blur(6px);		 
 		position: absolute;	
 		height: 434px;		 
 		background-image: url(../img/background-image-sunset.png); 		
@@ -35,10 +36,11 @@
 		background-position: center center;
 		background-attachment: fixed;
 		background-size: cover;
-		z-index:-9999
+		z-index:-9999;	
+		border-radius: 5px;		 
 	}
 
-	&__content {
+	ie&__content {		 
 		@include row-flex();
 		@include col();
 		@include size-xs(12);
@@ -46,11 +48,12 @@
 		@include md(max-width, 626px);
 		justify-content: center;
 		flex-direction: column;
-		height: 434px;		 
+		height: 434px;	
+		min-height:434px;	 
 		box-shadow: 3px 5px 5px 5px rgba(0,0,0,.2);
 		overflow:hidden; 
 		border-radius: 5px;
-		color: rgba(0, 0, 0, 1);   
+		color: rgba(0, 0, 0, 1);  
 	}
 
 	&__back {  
@@ -136,6 +139,7 @@
 		padding-right: 40px; 
 		padding-left:40px;	
 		line-height: 35px;
+		height:35px;
 		outline: none;		
 	}	
 	
@@ -304,3 +308,9 @@
 	 }
  }
 /*End Switcher*/
+ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.modal-login-wrapbox__content::before {
+		margin-top:-12px;		 
+	} 
+}

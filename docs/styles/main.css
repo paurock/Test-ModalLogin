@@ -422,6 +422,8 @@ input {
   height: 100vh;
   width: 100vw;
   margin: 0 !important;
+  top: 0;
+  left: 0;
 }
 
 .modal-login-wrapbox {
@@ -438,7 +440,7 @@ input {
 .modal-login-wrapbox__content::before {
   display: flex;
   content: "";
-  filter: blur(5px);
+  filter: blur(6px);
   position: absolute;
   height: 434px;
   background-image: url(../img/background-image-sunset.png);
@@ -447,6 +449,7 @@ input {
   background-attachment: fixed;
   background-size: cover;
   z-index: -9999;
+  border-radius: 5px;
 }
 
 .modal-login-wrapbox__content {
@@ -461,6 +464,7 @@ input {
   justify-content: center;
   flex-direction: column;
   height: 434px;
+  min-height: 434px;
   box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 5px;
@@ -552,6 +556,7 @@ input {
   padding-right: 40px;
   padding-left: 40px;
   line-height: 35px;
+  height: 35px;
   outline: none;
 }
 
@@ -819,6 +824,12 @@ input {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1110px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .modal-login-wrapbox__content::before {
+    margin-top: -12px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
